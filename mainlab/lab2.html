@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+
+
+#fixNav{
+  width: 100%;
+  height: 35px;
+  display: block;
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+#fixNav ul{
+  margin: 0;
+  padding: 0;
+}
+#fixNav ul li{
+  list-style:none inside;
+  width: auto;
+  float: left;
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+}
+#fixNav ul li a{
+  padding: 0 10px;
+  display: block;
+  text-decoration: none;
+}
+/*CSS Style cho Submenu*/
+#fixNav ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+}
+
+#fixNav ul li ul li{
+  display: block;
+  padding:0;
+  margin: 0;
+  float: none; /*Bỏ float cho li cấp thứ 2*/
+}
+
+
+#fixNav ul li:hover ul{
+  /*Display ra submenu*/
+  display: block;
+}
+div.container {
+	width: 0 auto;
+	margin: 0 auto;
+}
+
+img.center {
+	display: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.border {
+	border: 2px groove black;
+	background-color: lightblue;
+}
+
+
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	background-attachment: fixed;
+}
+
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+div.tab button:hover {
+	background-color: #ddd;
+}
+
+div.tab button.active {
+	background-color: #ccc;
+}
+
+.tabcontent {
+	display: none;
+	padding: auto auto;
+	
+}
+
+.download {
+	border: buttontext;
+	border-style: outset;
+	background-color: #4D9847;
+	color: white;
+	text-decoration: none;
+	background-color: #4D9847;
+	
+	
+}
+</style>
+<body>
+<nav id="fixNav">
+	<div class="container"> 
+		<div class="tab">
+			<button class="tablinks">Requirement</button>
+			<button class="tablinks">User Scenario</button>
+			<button class="tablinks">Design</button>
+			<button class="tablinks">Implement</button>
+
+		</div>
+		
+	</nav>
+		<div id="Requirement" class="tabcontent">
+			
+			<h3>REQUIREMENT</h3>
+			<p>
+				<ol>
+					<li> Tạo ra một user scenario. </li>
+					<li> Chọn một bước trong user scenario để thiết kế một form giao diện Web trên công cụ thiếu kế đã chọn.
+					Sau đó tạo ra file html tương ứng cho thiết kế này.</li>
+					<li>Upload lên Azure/Github: trong file HTML có chèn hình ảnh của user scenario ở bước (1) và đường dẫn của file thiết kế (2).</li>  
+		
+				</ol>
+				
+			</p>
+		</div>
+
+		<div id="User Scenario" class="tabcontent">
+		<h3>SCENARIO</h3>
+		
+		<p>
+		<center>
+			<img src="C:/Users/Huy/Documents/HOCTAP/GTN-MayCoNga/ronaldo/images/user.jpg" alt="scenario" class="center"
+					width="846" height="431">
+					</center>
+		</p>
+		
+		</div>
+
+
+		<div id="Design" class="tabcontent">
+			<h3>DESIGN</h3>
+			<p style="text-align: center">
+				<b><u>Desing on paper</u></b>
+			</p>
+
+			<center>
+				<img src="C:/Users/Huy/Documents/HOCTAP/GTN-MayCoNga/ronaldo/images/paper.jpg" alt="paper" class="center"
+					width="360" height="640">
+				<center></center>
+				<p></p>
+				<p></p>
+				<center>
+
+					<a href="images/paper.jpg"
+										download="images/imgDesignOnPaper.jpg"><span class="icon-download"></span></a>
+				</center>
+				<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <br>
+				<p style="text-align: center">
+					<b><u>Desing on figma</u></b>
+				</p>
+
+				<center>
+					<img src="images/addTree.png" alt="Addtree" class="center"
+						width="560" height="439">
+				</center>
+				<p></p>
+				<p></p>
+				<center>
+
+					<a href="images/addTree.png" download="addTree.png" class="download">DownloadImg</a>
+
+
+
+					<a href="images/addTree.fig" download="images/addTree.fig"
+						class="download">Download.fig</a>
+				</center>
+
+
+				<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <br>
+
+				<center>
+
+					<a href="image/imgDesignOnPaper1.jpg"
+						download="image/Cropsmanage.rar" class="download">DownloadAll</a>
+				</center>
+		</div>
+		
+		<div id="Implement" class="tabcontent">
+			<h3>IMPLEMENT</h3>
+
+
+			<center>
+
+
+				<a href="../lab/caytrong.html" class="download"
+					style="background-color: #568ea6;">View HTML</a>
+			</center>
+
+		</div>
+</body>
+<script type="text/javascript">
+	var buttons = document.getElementsByClassName('tablinks');
+	var contents = document.getElementsByClassName('tabcontent');
+	function showContent(id) {
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function() {
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('Lab1');
+</script>
+</html>
