@@ -180,6 +180,11 @@ th, td {
 }
 
  tr:nth-child(even) {background-color: #f2f2f2;}
+  div.bdy .splitL .bot{
+		width: 100%;
+	height: 30%;
+    float: bottom;
+ }
 
 
 	
