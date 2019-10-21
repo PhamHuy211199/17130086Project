@@ -466,7 +466,7 @@ pre {
   overflow-y: scroll; }
 
 div.tab {
-	width: 48%;
+	width: 100%;
 	overflow: hidden;
 	padding: auto auto;
 	-webkit-border-radius: 5px;
