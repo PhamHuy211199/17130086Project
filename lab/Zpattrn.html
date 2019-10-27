@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content"width= device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleZ.css" media="screen,print" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="header">
+    <img src="../images/logoeng.png"  title="Hệ thống Anh văn cho người bận rộn">
+    <button><i class="fa fa-user" style="color: whitesmoke"></i>   Sign in</button>
+
+
+</div>
+<div class="main-body">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="../images/eng1.jpg" width="100%" height="400px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/eng2.jpg" width="100%" height="400px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/eng3.jpg" width="100%" height="400px">
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+        <div class="info">
+           <img src="../images/icon.jpg" width="20%" height="20%">
+            <div> <div class="text-title"> Information:</div>
+                &nbsp; <i class="fa fa-bullhorn"></i> Where?
+                <p style=" margin: 2px; padding-left: 22px;">Anywhere if you are connected to the internet.</p><br>
+
+                &nbsp; <i class="fa fa-bullhorn"></i> What?
+                <li style=" padding-left: 22px;" > We have levels practice
+                                from beginner to advanced.</li>
+                <li style=" padding-left: 22px;">practice all skills: listening, speaking, reading and writing.</li><br>
+
+                &nbsp; <i class="fa fa-bullhorn"></i> Why?
+                <li style=" padding-left: 22px;" >You are always busy, and don't
+                    have time to improve your English.</li>
+                <li style=" padding-left: 22px;" > Your work requires English but you
+                    cannot go to an English class.</li><br>
+
+                &nbsp; <i class="fa fa-bullhorn"></i> When?
+                <p style=" margin: 2px; padding-left: 22px;">Anytime you have time, let's visit our website.</p><br>
+
+                &nbsp; <i class="fa fa-bullhorn"></i> Who?
+                <p style=" margin: 2px; padding-left: 22px;">Everyone, especially office workers and
+                    people who don't have time to improve English.</p>
+
+                &nbsp; <i class="fa fa-bullhorn"></i> How?
+                <p style=" margin: 2px; padding-left: 22px;">
+                    Create your account and start learning. Come with us and
+                    you will be good at English in a short time. good luck.</p><br>
+
+
+            </div>
+            <div>
+                <div style="margin-left:4em;"><div class="sign"><b>Sign up</b></div>
+                   <form action="" style="padding-top: 2em;">
+                       <input class="input-show" type="text" placeholder="Your email" autofocus >
+                       <input class="input-show" type="text" placeholder="First name" autofocus>
+                       <input class="input-show" type="text" placeholder="Last name" autofocus>
+                       <input class="input-show" type="password" placeholder="New password" autofocus >
+                       <input class="input-show" type="password" placeholder="Remind password" autofocus >
+
+                       <b style="color: #616161"> &nbsp; Day of birth</b><br>
+                       <form action="/action_page.php" >
+                           <input class="input-show" type="date" name="bday">
+                       </form>
+                       <b style="color: #616161"> &nbsp; Gender</b><br>
+                       <form action="">
+                           <input type="radio" name="gender" value="male"> Male
+                           <input type="radio" name="gender" value="female"> Female
+                           <input type="radio" name="gender" value="other"> Other
+                       </form>
+                   </form>
+
+                    <p style="font-size: 12px; font-family: 'Times New Roman'">By clicking Sign up, you agree to our
+                        <a href="#link" class="link">Terms</a>,  <a href="#link" class="link">Data
+                            Policy</a> and  <a href="#link" class="link">Cookie
+                            Policy</a>. You can
+                    receive our notifications via
+                        SMS and cancel receiving at any time.</p>
+                    <button class="signup-button">SIGN UP</button>
+                </div>
+
+
+            </div>
+        </div>
+
+</div>
+
+
+</body>
+
+<script>
+    //khai báo biến slideIndex đại diện cho slide hiện tại
+    var slideIndex;
+    // KHai bào hàm hiển thị slide
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+        //chuyển đến slide tiếp theo
+        slideIndex++;
+        //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+        if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+        }
+        //tự động chuyển đổi slide sau 5s
+        setTimeout(showSlides, 2000);
+    }
+    //mặc định hiển thị slide đầu tiên
+    showSlides(slideIndex = 0);
+
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+</script>
+</html>
