@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital manage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lab/lab4-5.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lab/main4-5.css">
+
+</head>
+<body class="body">
+<nav class="navbar-fixed-top" style="top: 0px">
+    <div class="header-content" >
+        <div><a href="#" ><img src="../images/hptal.jpg" alt="Famy hospital" width="50%" height="70%" style="padding-top: 13px;"></a></div>
+        <form style="width: 20em; padding-top: 9px;" action="/action_page.php">
+            <input type="text" id="search" autofocus>
+        </form>
+        <div></div>
+        <div class="header-menu">
+
+            <ul>
+                <li>
+                    <a href="#" title="Appoinment"><i class="fa fa-calendar" style="padding-left: 0px" ></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Inbox app"><i class="fa fa-comments-o" ></i></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-menu d-none d-sm-block" title="Contact form"><i class="fa fa-envelope-o" ></i><span class="notification-dot"></span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown" aria-expanded="false" title="Notification">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+                    <ul class="dropdown-menu notifications dropdown-menu-right" id="drop-noti">
+                        <li class="header" ><strong>You have 4 new Notifications</strong></li>
+                        <li class="sub-noti" style=" margin-top: 35px;">
+                            <p class="text" >Campaign <strong>Holiday sale</strong> is nearly reach budget limit.</p>
+                            <span>10:00 AM Today</span>
+
+                            </a>
+                        </li>
+                        <li class="sub-noti">
+                            <p class="text">Your new campaign<strong>Holiday Sale</strong> is approved.</p>
+                            <span>11:30 AM Today</span>
+
+                            </a>
+                        </li>
+                        <li class="sub-noti">
+
+                            <p class="text">Website visits from Twitter is 27% higher than last week.</p>
+                            <span> 04:00 PM Today </span>
+
+                            </a>
+                        </li>
+                        <li class="sub-noti" style="border-bottom: 0.5px solid rgba(255, 255, 255, 0.43); ">
+                            <p class="text">Error on website analytics configurations</p>
+                            <span> Yesterday</span>
+                            </a>
+                        </li>
+                        <li class="footer"><a href="javascript:void(0);" class="more">See all notifications</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown" title="Setting" ><i class="fa fa-gear fa-spin"></i></a>
+                    <ul class="dropdown-menu user-menu menu-icon dropdown-menu-right"  id="drop">
+                        <li class="menu-heading">ACCOUNT SETTINGS</li>
+                        <li><a href="javascript:void(0);" ><i class="fa fa-edit"></i> <span>Basic</span></a></li>
+                        <li><a href="javascript:void(0);" ><i class="fa fa-sliders"></i> <span>Preferences</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-lock"></i> <span>Privacy</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-bell-o"></i> <span>Notifications</span></a></li>
+                        <li class="menu-heading">BILLING</li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-credit-card"></i> <span>Payments</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-print"></i> <span>Invoices</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-refresh"></i> <span>Renewals</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="icon-menu" title="log-out"><i class="fa fa-sign-out"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="left-sidebar-body">
+        <div class="user-account">
+            <img src="../images/imguser.png" class="rounded-circle user-photo">
+            <div class="dropdown">
+                <span>Wellcome,</span>
+                <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown" aria-expanded="false"><strong>Dr.Pham Huy</strong></a>
+                <ul  class="dropdown-menu dropdown-menu-right" id="account-content" >
+                    <li><a href="#"><i class="fa fa-user"></i> My profile</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-open"></i> Messages</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-gear"></i> Settings</a></li>
+                    <hr>
+                    <li><a href="#" ><i class="fa fa-power-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            <li >
+                <a href="Lab4-5.html">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-calendar-o"></i>
+                    <span>Appoinment</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sticky-note"></i>
+                    <span>Taskboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class="fa fa-paper-plane-o"></i>
+                    <span>Contact-Form</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span>Inbox app</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="#demo" data-toggle="collapse">
+                    <i class="fa fa-user-md"></i>
+                    <span>Doctor</span>
+                    <i class="fa fa-angle-double-down angle-position"></i>
+                </a>
+                <div id="demo" class="collapse">
+                    <ul class="sub" data-parent="collapse show" data-parent="#accordion">
+                        <li><a href="mail.jsp">-- All doctor</a></li>
+                        <li><a href="mail_compose.jsp">-- Add doctor</a></li>
+                        <li><a href="comment.jsp">-- Doctor profile</a></li>
+                        <li><a href="comment.jsp">-- Doctor schedule</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sub-menu">
+                <a href="#demo2" data-toggle="collapse">
+                    <i class="fa fa-user"></i>
+                    <span>Patients</span>
+                    <i class="fa fa-angle-double-down angle-position"></i>
+                </a>
+                <div id="demo2" class="collapse">
+                    <ul class="sub" data-parent="collapse show" data-parent="#accordion">
+                        <li><a href="mail.jsp">-- All patient</a></li>
+                        <li><a href="mail_compose.jsp">-- Add patient</a></li>
+                        <li><a href="comment.jsp">-- Patient profile</a></li>
+                        <li><a href="comment.jsp">-- Invoice</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sub-menu">
+                <a href="#demo1" data-toggle="collapse">
+                    <i class="fa fa-cart-plus"></i>
+                    <span>Payments</span>
+                    <i class="fa fa-angle-double-down angle-position"></i>
+                </a>
+                <div id="demo1" class="collapse">
+                    <ul class="sub" data-parent="collapse show" data-parent="#accordion">
+                        <li><a href="mail.jsp">-- Payments</a></li>
+                        <li><a href="mail_compose.jsp">-- Add payment</a></li>
+                        <li><a href="comment.jsp">-- Invoice</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-map-marker"></i>
+                    <span>Worldwide centres</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-puzzle-piece"></i>
+                    <span>Widget</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- sidebar menu end-->
+    </div>
+</nav>
+
+<div id="main-content-body">
+    <div class="breadcrumb-menu">
+        <ul class="breadcrumb">
+            <li><a href="Lab4-5.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#">Contact-form</a></li>
+        </ul>
+    </div>
+    <div class="col-md-10 order-md-last d-flex">
+        <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" >
+            </div>
+        </form>
+
+    </div></div>
+</div>
+</div>
+
+
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myText").autofocus;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</html>
