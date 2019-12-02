@@ -39,7 +39,6 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
 .iframe{
 	border: none;
 	overflow-y: auto;
@@ -466,6 +465,7 @@ pre {
   overflow-y: scroll; }
 
 div.tab {
+  height: 3em;
 	width: 100%;
 	overflow: hidden;
 	padding: auto auto;
@@ -523,6 +523,10 @@ div.tab button.active {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+
+#lab-container{
+  max-width: 100%;
+}
 
 .container-fluid {
   width: 100%;
