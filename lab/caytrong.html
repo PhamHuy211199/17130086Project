@@ -6,145 +6,171 @@
 	<meta name="viewport"
 		  content"width= device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../lab/caytrong.css">
 <head>
 <title>Thêm cây trồng</title>
-<style type="text/css">
-
-	 div{
-            border:1px solid gray;
-            padding:60px 50px;
-            font-size:60px;
-            color: #E6EB13;
-            text-align: center;
-            background-image: url("../images/nen.jpg");
-			max-width:100%;
-			max-height: 100%;
-            
-        }
-	
-	 .nomal{
-	 font-size: 15px;
-	 color: white;}
-	 
-        
-       
-        
-        
-</style>
-
 </head>
 <meta charset="utf-8" />
 
 
 <body>
+<div class="border-back">
 
-<a href"index.html" class="nomal";> Home </a>
+	<div class="menusub">
+		<div>
+		<div class="dropdown">
+			<a class="dropbtn" style="border-right: 2px solid #E6EB13">Trang chủ</a>
+		</div>
+		</div>
+		<div>
+			<div class="dropdown">
+				<a class="dropbtn">Tùy chọn</a>
+				<div class="dropdown-content">
+					<a href="#">Thêm</a>
+					<a href="#">Sửa</a>
+					<a href="#">Xóa</a>
+					<a href="#">Cập nhật</a>
+				</div>
+			</div>
+		</div>
 
-<div>
+		</div>
 
-
-
-<u><b>THÊM CÂY TRỒNG</b></u>
-
-
+	<u><b>THÊM CÂY TRỒNG</b></u>
 </div>
 
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <br>
 
-<center>
-<form>
-<table>
+	<table class="form-check">
 
+		<tr>
+
+			<td width="30%" align="right"><b>Tên:</b></td>
+			<td><input type="text" class="bord" size="80"></td> <br>
+		</tr>
+		<br>
+		<tr>
+			<td width="30%" align="right"><b>Mã:</b></td>
+			<td><input type="text" class="bord" size="80"></td>
+		</tr>
+
+		<tr>
+			<td width="30%" align="right"><b>Giống:</b></td>
+			<td><input type="text" class="bord" size="80"></td>
+		</tr>
+
+		<tr>
+			<td width="30%" align="right"><b>Số lượng:</b></td>
+			<td><input type="text" class="bord" size="80"></td>
+		</tr>
+
+
+		<tr>
+			<td width="30%" align="right"><b>Ngày trồng:</b></td>
+			<td><input type="text" class="bord" size="80"></td>
+		</tr>
+
+
+
+
+		<tr>
+			<td width="30%" align="right"><b>Khu trồng:</b></td>
+			<td><select size="1" name="city" class="bord">
+				<option value="Not selected">[Chọn khu]</option>
+				<option value="Nk1">Nhà Kính 1</option>
+				<option value="Nk2">Nhà Kính 2</option>
+				<option value="Nk3">Nhà Kính 3</option>
+				<option value="Nk4">Nhà Kính 4</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td width="30%" align="right" ><b>Thời gian canh tác:</b></td>
+			<td><select size="1" name="city" class="bord">
+				<option value="Not selected">[Chọn tháng]</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select></td>
+			<br>
+		</tr>
+		<tr>
+			<td width="30%" align="right"><b>Dự kiến thu hoạch:</b></td>
+			<td><input type="text" class="bord" size="80"></td>
+		</tr>
+	</table>
+			 <button class="save">SAVE</button>
+
+<table id="customers">
 	<tr>
-	
-	<td width="30%" align="right"><b>Tên: &emsp;&emsp;&emsp; </b></td>
-	<td><input type="text" name="ten" size="80"></td> <br>
+		<th>Mã</th>
+		<th>Tên</th>
+		<th>Giống</th>
+		<th>Số lượng</th>
+		<th>Ngày trồng</th>
+		<th>Khu trồng</th>
+		<th>Thời gian canh tác</th>
+		<th>Dự kiến thu hoạch</th>
 	</tr>
-<br>
 	<tr>
-	<td width="30%" align="right"><b>Mã: &emsp;&emsp;&emsp;</b></td>
-	<td><input type="text" name="ma" size="80"></td>
+		<td>C01</td>
+		<td>Chuối hoa</td>
+		<td>Chuối</td>
+		<td>100</td>
+		<td>21/4/2018</td>
+		<td>Nhà kính 1</td>
+		<td>4</td>
+		<td>23/8/2018</td>
+	</tr>
+	<tr>
+		<td>C02</td>
+		<td>Cà chua bi</td>
+		<td>Cà</td>
+		<td>180</td>
+		<td>21/4/2018</td>
+		<td>Nhà kính 2</td>
+		<td>2</td>
+		<td>21/6/2018</td>
+	</tr>
+	<tr>
+		<td>C03</td>
+		<td>Bắp Mỹ</td>
+		<td>Bắp</td>
+		<td>300</td>
+		<td>20/6/2018</td>
+		<td>Nhà kính 3</td>
+		<td>4</td>
+		<td>23/10/2018</td>
+	</tr>
+	<tr>
+		<td>C04</td>
+		<td>Đậu cô-ve</td>
+		<td>Đậu</td>
+		<td>700</td>
+		<td>15/7/2018</td>
+		<td>Nhà kính 4</td>
+		<td>3</td>
+		<td>17/10/2018</td>
+	</tr>
+	<tr>
+		<td>C05</td>
+		<td>Khoai mật</td>
+		<td>Khoai</td>
+		<td>400</td>
+		<td>9/10/2018</td>
+		<td>Nhà kính 3</td>
+		<td>5</td>
+		<td>11/3/2018</td>
 	</tr>
 
-	<tr>
-	<td width="30%" align="right"><b>Giống: &emsp;&emsp;&emsp; </b></td>
-	<td><input type="text" name="giong" size="80"></td>
-	</tr>
-	
-	<tr>
-	<td width="30%" align="right"><b>Số lượng:&emsp;&emsp;&emsp;</b></td>
-	<td><input type="text" name="soluong" size="80"></td>
-	</tr>
-
-	
-	<tr>
-	<td width="30%" align="right"><b>Ngày trồng:&emsp;&emsp;&emsp;</b></td>
-	<td><input type="text" name="ngaytrong" size="80"></td>
-	</tr>
-
-
-	
-	
-	<tr>
-				<td width="30%" align="right"><b>Khu trồng: &emsp;&emsp;&emsp; </b></td>
-				<td><select size="1" name="city">
-						<option value="Not selected">[Chọn khu]</option>
-						<option value="Nk1">Nhà Kính 1</option>
-						<option value="Nk2">Nhà Kính 2</option>
-						<option value="Nk3">Nhà Kính 3</option>
-						<option value="Nk4">Nhà Kính 4</option>
-				</select></td>
-			</tr>
-	
-	<tr>
-				<td width="30%" align="right"><b>Thời gian canh tác: &emsp;&emsp;&emsp;</b></td>
-				<td><select size="1" name="city">
-						<option value="Not selected">[Chọn tháng]</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						
-				</select></td>
-				<br>
-			</tr>
-
-	<tr>
-	<td width="30%" align="right"><b>Dự kiến thu hoạch:&emsp;&emsp;&emsp;</b></td>
-	<td><input type="text" name="dkth" size="80"></td>
-	</tr>
-	</center>
-<p></p>
-<p></p>
-<p></p>
-	
-			
 </table>
-</form>
-<tr>  
-
-		<br>
-		<br>
-		<br>
-	
-			<center><td> <button>SAVE</button></td>
-
-			</center></tr>
-			
-
-			
-
 </body>
 </html>
