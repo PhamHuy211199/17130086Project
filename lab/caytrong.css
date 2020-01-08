@@ -1,0 +1,105 @@
+.border-back{
+    border:1px solid gray;
+    padding:60px 50px;
+    font-size:60px;
+    color: #E6EB13;
+    text-align: center;
+    background-image: url("../images/nen.jpg");
+    max-width:100%;
+    max-height: 100%;
+
+}
+.menusub{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -3%;
+    margin-left: 83%;
+
+}
+.menusub > div{
+    margin: 1px;
+}
+.menusub .dropbtn {
+    padding: 0 5px;
+    color: #E6EB13;
+    font-size: 25px;
+}
+.menusub .dropbtn:hover{
+    color: #e33700;
+}
+
+
+.menusub .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menusub .dropdown-content {
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 21px;
+}
+
+.menusub .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menusub .dropdown-content a:hover {background-color: #ddd;}
+
+.menusub .dropdown:hover .dropdown-content {display: block;}
+
+.form-check{
+    margin-left: 18%;
+}
+.form-check .bord{
+    border: 1px solid black;
+    border-radius:  2px;
+    width: 500px;
+    height: 2em;
+}
+.save{
+    border-radius: 3px;
+    border:  1px solid gray;
+    width: 200px;
+    height: 3em;
+    background-color: #008000;
+    color: white;
+    font-weight: bold;
+    margin-left: 48em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.save:hover{
+    background-color: #004300;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008000;
+    color: white;
+}
