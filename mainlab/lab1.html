@@ -12,19 +12,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style type="text/css">
-
-	.download {
-		font-size: 25px;
-
-
-	}
 	.iframe{
 		border: none;
 		scroll: none;
 	}
 </style>
 <body>
-<div class="container" style="width: 100%">
+<div class="container" style="width: 100%; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;" >
 	<ul class="nav nav-tabs">
 		<li class="active"><a data-toggle="tab" href="#home" style="font-size: 18px">Requirement</a></li>
 		<li><a data-toggle="tab" href="#menu1" style="font-size: 18px">Design</a></li>
@@ -33,60 +27,32 @@
 	<div class="tab-content">
 		<div id="home" class="tab-pane active">
 			<p style="font-size:18px;font-family:'Times New Roman'">
+				<ul>
 				Chọn một đối tựng bất kì trong thế giớ thực, ví dụ như <b>sinh
 				viên, môn học, giảng viên,</b>... để thiết kế trên phần mềm một chức
 				năng trên web để <b>thêm, xóa, sửa, tìm kiếm</b> cho đối tượng đó.
+		</ul>
 			</p>
-
 		</div>
-
 		<div id="menu1" class="tab-pane fade">
-			<b><u>Desing on paper</u></b>
+				<div class="design-content">
+					<div>
+			<b><u>Desing on paper</u></b><br>
+				<img src="../images/paper.jpg" alt="paper">
+						<button ><a href="../images/paper.jpg"
+				   download="images/imgDesignOnPaper.jpg"  title="Download image design on paper">
+					<i class="fa fa-download"></i> Download</a></button>
+				</div>
+				<div>
+				<b><u>Desing on figma</u></b><br>
+					<img src="../images/addTree.png" alt="Addtree">
 
-
-			<p>
-			<p>
-				<img src="../images/paper.jpg" alt="paper"
-					 width="360" height="640">
-
-
-				<a href="../images/paper.jpg"
-				   download="images/imgDesignOnPaper.jpg" class="download" title="Download image design on paper"><i class="fa fa-download"></i> </a>
-
-				<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <br>
-
-				<b><u>Desing on figma</u></b>
-			<p>
-
-
-				<img src="../images/addTree.png" alt="Addtree"
-					 width="560" height="439">
-
-
-
-
-
-				<a href="../images/addTree.png" download="addTree.png" class="download" title="Download image">
-					<i class="fa fa-download"></i></a>
-
-
-
-				<a href="../images/addTree.fig" download="images/addTree.fig"
-				   class="download" title="Download file Figma"><i class="fa fa-download"></i></a>
-
-
-
-				<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <br>
-
-
-            <b>You can down all file </b>
-				<a href="..images/Cropsmanage.rar"
-				   download="image/Cropsmanage.rar" class="download" title="Download all"><i class="fa fa-download"></i></a>
-
+					<button><a href="../images/addTree.fig" download="images/addTree.fig"
+				   title="Download file Figma"><i class="fa fa-download"></i> Download</a></button>
+				</div>
+		</div>
+			<button class="downAll"><a href="..images/Cropsmanage.rar"
+									   download="image/Cropsmanage.rar"  title="Download all"><i class="fa fa-download"> DownloadAll</i></a></button>
 		</div>
 		<div id="menu2" class="tab-pane fade">
 		<iframe src="../lab/caytrong.html" width="100%" height="790px" class="iframe"></iframe>
