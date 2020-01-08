@@ -8,12 +8,14 @@
 			background-repeat: no-repeat;
 		
         }
-		.color{
+	.color{
 			color:#959497;
 		
 		}
 		
-		.border{
+	.border{
+		border-bottom-left-radius: 11px;
+		border-top-left-radius: 11px;
 		border:1px solid red;
 		width:600px;
 		height:50px;
@@ -22,14 +24,25 @@
 		
 
 
-div.tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+.tab {
 
+	display: flex;
+	flex-direction: row;
 }
+.tab > div{
 
-div.tab button {
+		width: 100%;
+	text-align: center;
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+
+
+
+.tab button {
+	width: 100%;
 	background-color: inherit;
 	float: left;
 	border: none;
@@ -41,7 +54,7 @@ div.tab button {
 	color: #ad101e;
 }
 
-div.tab button:hover {
+.tab button:hover {
 	background-color: #ad101e;
 	color: white;
 	background-attachment: fixed;
@@ -104,7 +117,7 @@ div.bdy oldcost{
 }
 
 div.bdy note{
-	background-image: url("../images/note.png");
+	background-image: url("C:/Users/Huy/Documents/HOCTAP/GTN-MayCoNga/ronaldo/images/note.png");
 	border: none;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -131,12 +144,14 @@ div.bdy sale {
 
 
 .btsearch {
+	margin-left: -5px;
+	position: inherit;
 	background-color: red;
 	color: white;
 	border: 1px;
 	width: auto;
 	height: 55px;
-	padding-top:12px;
+	padding-top: 17px;
 	text-align: center;
 	}
 	
